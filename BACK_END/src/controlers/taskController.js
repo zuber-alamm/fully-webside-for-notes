@@ -1,4 +1,4 @@
-import { task } from "../data/task";
+import { tasks } from "../data/task.js";
 export const createTask = (req, res) => {
   const { title } = req.body;
 

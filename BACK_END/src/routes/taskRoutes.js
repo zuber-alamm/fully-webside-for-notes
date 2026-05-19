@@ -1,6 +1,6 @@
-import express from "express"
+import express from "express";
 
-const Routes = express.Router()
+const router = express.Router();
 
 import {
   createTask,
@@ -9,7 +9,7 @@ import {
   getPendingTasks,
   markCompleted,
   deleteTask,
-} from "../controlers/taskController";
+} from "../controlers/taskController.js";
 
 router.post("/taskes", createTask);
 
